@@ -1,0 +1,163 @@
+/* Whole Navigation */
+
+#navigation{
+    background-color: blue;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    min-height: 10vh;
+    border-style: solid;
+    border-color: #b76e79;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1.5px;
+}
+
+.wholeNavBar{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items:center;
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* @media screen and (max-width:1000px) {
+    .show{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        height: 25vh;
+        background-color: blue;
+        
+    }
+} */
+
+
+/* Nav Title */
+
+.wholeNavBar h3{
+    cursor: pointer;
+}
+
+/* Buttons and Search  */
+
+.buttonsSearch{
+    display: grid;
+    height: 10vh;
+    align-items: centre;
+    grid-template-columns: auto auto;
+    /* justify-content: space-between; */
+    gap: 5vw;
+    position: relative;
+    left: 4vw;
+}
+
+
+
+/* Nav Buttons  */
+
+.buttonsNav{
+    display:grid;
+    height: 10vh;
+    align-items: center;
+    grid-template-columns: repeat(5, auto);
+    gap:0.25vw
+}
+
+.navButtons {
+    background-color: blue;
+}
+
+.navButtons:hover{
+    background-color: #F5BD02;
+}
+
+.dropdownMenuActive{
+    /* display: grid;
+    grid-template-columns: auto; */
+    background-color: rgb(59, 59, 255);
+    border-style: solid;
+    border-color: #b76e79;
+    position: absolute;
+    text-align: center;
+    top: 9.5vh;
+    right: 23.5vw;
+    border-radius: 2px;
+}
+
+.dropdownMenuActive li{
+    color: black;
+    list-style-type: none;
+}
+
+
+.dropdownMenuActive ul{
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.services{
+    right: 22.5vw;
+}
+
+.dropdownMenuInactive{
+    display: none;
+}
+
+
+
+/* Search Section  */
+/* .navForm{
+    position: relative;
+    left: 5vw;
+} */
+
+
+
+
+.navForm form{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 10vh;
+    gap: 0.75vw;
+    font-size: 1.1rem;
+}
+
+
+.navForm button{
+    background-color: blue;
+    color: white;
+    /* box-shadow: 0px 0px 0px 0px; */
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(59, 59, 250);
+    border-radius: 5px;
+}
+
+.navForm input::placeholder{
+    color: black;
+}
+
+.navForm input:focus{
+    /* border-color: #b76e79; */
+    border-style: none;
+    outline: none;
+    box-shadow: 0px 0px 1px 3px #b76e79;
+}
+
+.navForm input{
+    /* border-color: #b76e79; */
+    border-radius: 0.5%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+    outline: none;
+}
+
+.navForm input:focus{
+    box-shadow: 0px 0px 1px 2px #b76e79;
+}
