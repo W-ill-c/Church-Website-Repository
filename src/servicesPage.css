@@ -1,0 +1,111 @@
+/* Main Sections */
+
+.serviceMainBody{
+    padding: 15vh 0vw 1vh 0vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+
+.candlesChurch{
+    width: 99vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 3px;
+    /* margin: 0px auto;
+    display: block; */
+    /* padding: 6px; */
+    position: relative;
+    top: 12vh;
+    box-shadow: 0px 0px 7px 3.5px #F5BD02;;
+}
+
+header{
+    color: #B76E79;
+    position: relative;
+    top: 15vh;
+    text-align: center;
+}
+
+/* Cards */
+
+.allCards{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceCards{
+    border-color:#F5BD02;
+    border-style: solid;
+    border-width: 1px;
+    width: 25%;
+    margin: 1%;
+}
+
+.cardTitle{
+    background-color: #D7E5F0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #F5BD02;
+    margin: 0%;
+    padding-left: 4px;
+    color: #B76E79;
+}
+
+#serviceCentre{
+    color: black;
+    background-color: rgb(180, 180, 234);
+}
+
+.cardText li{
+    list-style-type: none;
+
+}
+
+.cardText ul{
+    padding: 2%;
+}
+
+.cardText{
+    text-align: left;
+}
+
+
+/* Other Services */
+
+.otherServices{
+    text-align: center;
+    margin-top: 1.5vh;
+    padding: 0%;
+    width: 65%;
+    border-style: solid;
+    border-color: #F5BD02;
+    border-width: 1.5px;
+}
+
+.otherServices li{
+    list-style-type: none;
+    text-align: left;
+
+}
+
+.otherServices ul{
+    padding: 2.5%;
+    width: fit-content;
+}
+
+.othersTitle{
+    background-color: #D7E5F0;
+    padding: 4px;
+    border-style: solid;
+    border-color: #F5BD02;
+    border-width: 0px 0px 1px 0px;
+    color: #B76E79;
+}
