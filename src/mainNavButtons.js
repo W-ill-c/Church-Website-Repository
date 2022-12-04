@@ -14,7 +14,7 @@ function NavBarButtons (){
 
             {NavButtons.map((button)=>{
                 return(
-                    <Button onClick={navigate(button.history)} variant="primary" className="navButtons" type="button">{button.title}</Button>
+                    <Button onClick={()=>{navigate(button.history)}} variant="primary" className="navButtons" type="button">{button.title}</Button>
                 )
             }
             )}
