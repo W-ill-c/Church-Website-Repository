@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 function NavBarButtons (){
 
     const navigate = useNavigate()
+
     return(
         <div className="buttonsNav">
 
