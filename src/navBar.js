@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavBarButtons from './mainNavButtons';
 import NavInput from './navSearch.js';
 
+
 function NavBar(){
 
     function scroll(){
@@ -12,24 +13,24 @@ function NavBar(){
     }
 
     return(
-        <header id="navigation">
+        <div id="navigation">
             <Navbar expand="lg" id="navigation">
-                <Container className="wholeNavBar">               
-                    <div>
-                        <h3 onClick={scroll()}>St Andrew's Church</h3> :
-                    </div>
+                <Container className="wholeNavBar">
+                    <Navbar.Text>
+                        <h3 onClick={scroll}>St Andrew's Church</h3>
+                    </Navbar.Text>               
                     <div className="toggleDropdown">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav" >
+                        <Navbar.Collapse bg="light" id="responsive-navbar-nav" >
                             <Nav className="buttonsSearch  me-auto">
-                                    <NavBarButtons  />
+                                <NavBarButtons  />
                                 <NavInput />
                             </Nav>
                         </Navbar.Collapse> 
                     </div>
                 </Container>
             </Navbar>
-        </header>
+        </div> 
     )
 }
 

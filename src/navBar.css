@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items:center;
-    height: 10vh;
+    min-height: 10vh;
     width: 100vw;
     justify-content: space-between;
 }
@@ -33,6 +33,35 @@
         
     }
 } */
+
+.show{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    /* position: relative;
+    top: 3vh; */
+    margin: 7px;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .buttonsNav{
+        width: 45vw;
+    }
+
+    .buttonsSearch{
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .show{
+        position: relative;
+        right: 4vw;
+    }
+
+}
+
 
 
 /* Nav Title */
@@ -66,11 +95,11 @@
     gap:0.25vw
 }
 
-.navButtons {
+.buttonsNav button{
     background-color: blue;
 }
 
-.navButtons:hover{
+.buttonsNav button:hover{
     background-color: #F5BD02;
 }
 
